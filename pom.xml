@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.apache</groupId>
+        <artifactId>apache</artifactId>
+        <version>23</version>
+    </parent>
+
+    <groupId>org.lean</groupId>
+    <artifactId>lean-swt-viewer</artifactId>
+    <version>0.0.11-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <lean-version>0.0.11-SNAPSHOT</lean-version>
+        <swt-version>3.115.100</swt-version>
+        <hop-version>0.70-SNAPSHOT</hop-version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.lean</groupId>
+            <artifactId>lean-engine</artifactId>
+            <version>${lean-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.swt</artifactId>
+            <version>${swt-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hop</groupId>
+            <artifactId>hop-core</artifactId>
+            <version>${hop-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hop</groupId>
+            <artifactId>hop-engine</artifactId>
+            <version>${hop-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hop</groupId>
+            <artifactId>hop-ui</artifactId>
+            <version>0.70-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hop</groupId>
+            <artifactId>hop-ui-rcp</artifactId>
+            <version>0.70-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
